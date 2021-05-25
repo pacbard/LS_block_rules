@@ -1,0 +1,24 @@
+---
+kind: pipeline
+type: docker
+name: Build block list
+
+steps:
+- name: Build
+  image: python:2
+  commands:
+    - python2 build_rules.py
+
+- name: Commit to Github
+  image: appleboy/drone-git-push
+  settings:
+    remote_name: github
+    remote: git@github.com:pacbard/LS_block_rules.git
+    branch: master
+    local_ref: master
+    commit_message: 'Scheduled update [skip ci]'
+    force: false
+    commit: true
+    ssh_key:
+      from_secret: GIT_SSH_KEY
+...
