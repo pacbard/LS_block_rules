@@ -12,13 +12,11 @@ steps:
 - name: Commit to Github
   image: appleboy/drone-git-push
   settings:
-    remote_name: github
-    remote: git@github.com:pacbard/LS_block_rules.git
+    remote: 
+      from_secret: gh_repo
     branch: master
     local_ref: master
     commit_message: 'Scheduled update [skip ci]'
     force: false
     commit: true
-    ssh_key:
-      from_secret: GIT_SSH_KEY
 ...
