@@ -76,7 +76,6 @@ def convert_to_lsrules(urls_to_block):
 
 def main():
     hostfiles=[
-                'https://block.energized.pro/spark/formats/hosts',
                 'https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts',
                 'https://someonewhocares.org/hosts/',
                 'https://pgl.yoyo.org/adservers/serverlist.php?hostformat=hosts&showintro=0'
