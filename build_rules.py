@@ -78,7 +78,12 @@ def main():
     hostfiles=[
                 'https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts',
                 'https://someonewhocares.org/hosts/',
-                'https://pgl.yoyo.org/adservers/serverlist.php?hostformat=hosts&showintro=0'
+                'https://pgl.yoyo.org/adservers/serverlist.php?hostformat=hosts&showintro=0',
+                'https://v.firebog.net/hosts/AdguardDNS.txt',
+                'https://v.firebog.net/hosts/Admiral.txt',
+                'https://v.firebog.net/hosts/Easylist.txt',
+                'https://v.firebog.net/hosts/Easyprivacy.txt',
+                'https://v.firebog.net/hosts/Prigent-Ads.txt'
               ]
     urls = {}
 
